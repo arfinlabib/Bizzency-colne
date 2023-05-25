@@ -1,0 +1,710 @@
+/*
+Theme  Name: Aytor
+Version: 1.0.0
+Author: Aytor
+Description:
+
+===================
+Table of Content
+-----------------------
+1) Common CSS
+
+*/
+
+/* Common Section Css Start */
+:root {
+    --head-lign-font: 'Abril Fatface', cursive;
+    --secandry-primary-font: 'Ubuntu', sans-serif;
+    --paragrph-font: 'Open Sans',sans-serif;
+    --primary-color: #0f2f44;
+    --secandry-primary-color: #8484bf;
+    --bg-color:#f5f5f5;
+    --bg-dark-color:#e9e9e9;
+    --bg-light-color:#eeeeee;
+    --paragrph-color:#4444;
+    --secendary-paragrph-color:#2222;
+    --secandry-paragroh-color:#222222;
+    --light-yellow:#fff9e6;
+    --yellow:#ffc712;
+    --common-white:#ffff;
+    --common-black: #0000;
+    --icon-color:#777777;
+    --photoshop-color: #294795;
+    --illustrator-color:#5d3b15;
+    --dw-color: #33491f;
+    --ae-color:#39295f;
+}
+h1,
+h2{
+    font-family: var(--head-lign-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+span,
+small {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+body {
+    font-family: var(--secandry-primary-font);
+}
+p{
+    font-family: var(--paragrph-font);
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+.section_heading h4{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-color);
+    text-transform: capitalize;
+
+}
+.section_heading h2{
+    font-size: 32px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+
+}
+/* common css end  */
+/* page header sectio started  */
+#page_header .header h5{
+    color: var(--common-white);
+    font-size: 16px;
+    padding: 15px 0;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#page_header .header .endsec{
+    justify-content: end;
+}
+#page_header{
+    background: var(--primary-color);
+}
+/* page header sectio end  */
+/* backto top button start  */
+.backToTop_btn{
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--yellow);
+    position: fixed;
+    bottom: 4%;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 555555;
+     filter: drop-shadow(5px 5px 10px #666);
+}
+.backToTop_btn button{
+    background: none;
+    border: none;
+}
+.backToTop_btn button i{
+    color: var(--common-white);
+    font-size: 20px;
+}
+/* backto top button end  */
+/* nav sectiion sectio start  */
+
+#my_nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    animation-name: stickyManu;
+    animation-duration: .4s;
+}
+@keyframes stickyManu {
+    from{
+        background: var(--bg-dark-color);
+    }
+    to{
+        background-color: var(--common-white);
+    }
+}
+#my_nav .navbar{
+    padding: 0px;
+    background: var(--common-white);
+    width: 100%;
+}
+#my_nav .navbar-brand{
+    padding: 0px;
+}
+#my_nav .menu ul li a{
+    color: var(--secandry-paragroh-color);
+    text-transform: capitalize;
+    padding: 40px 20px;
+    font-weight: 500;
+    display: inline-block;
+    transition: .5s;
+    font-size: 16px;
+    
+}
+#my_nav .menu ul li:hover a{
+    color: var(--yellow);
+    background: var(--light-yellow);
+}
+/* nav sectiion sectio end  */
+/* banner section start  */
+#banner{
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+#banner .banner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#banner .banner .banner_contant h3{
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+#banner .banner .banner_contant h1{
+    font-size: 80px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+#banner .banner .banner_contant h4{
+    font-size: 32px;
+    color: var(--secandry-primary-color);
+    text-transform: capitalize;
+    letter-spacing: 10px;
+}
+#banner .banner .banner_contant p{
+    font-size: 14px;
+    color: var(--secandry-paragroh-color);
+    text-transform: inherit;
+    padding: 12px 0;
+}
+#banner .banner .banner_contant button{
+    background: none;
+    border: none;
+    margin: 20px 0;
+}
+#banner .banner .banner_contant button .ancor{
+    color: var(--common-white);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 25px;
+    transition: .5s;
+    background-color: var(--secandry-primary-color);
+    display: inline-block;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+#banner .banner .banner_contant button:hover a {
+    color: var(--secandry-primary-color);
+    background: var(--common-white);
+}
+#banner .banner .banner_contant button  i{
+    height: 50px;
+    width: 50px;
+    font-size: 15px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;  
+    color: var(--secandry-primary-color);
+    background: var(--common-white); 
+    transition: .5s; 
+}
+
+#banner .banner .banner_contant button:hover i {
+    background: var(--secandry-primary-color);
+    color: var(--common-white);
+}
+/* banner section end  */
+/* about section start  */
+#about{
+    padding: 100px 0;
+}
+#about .section_info p{
+    color: var(--primary-color);
+    font-size: 16px;
+    padding: 40px 0 20px;
+}
+#about .section_info li{
+    list-style: none;
+    padding: 10px 0 10px 25px;
+    color: var(--primary-color);
+    font-size:  16px;
+    font-family: var(--paragrph-font);
+    
+
+}
+#about .section_info button{
+    border: none;
+    background: none;
+    margin: 20px 0px;
+}
+#about .section_info button a{
+    padding: 15px 20px;
+    display: inline-block;
+    background: var(--common-white);
+    font-size: 20px;
+    color: var(--primary-color);
+    box-shadow: 5px 10px 18px var(--bg-dark-color);
+    text-transform: capitalize;
+    transition: .5s;
+    border-radius: 15px;
+    font-weight: 500;
+}
+#about .section_info button:hover a{
+    background: var(--yellow);
+}
+/* about section end  */
+/* skil section start  */
+#skill .section_heading p{
+    padding: 5px;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+#skill .section_info{
+    padding: 30px 0;
+}
+#skill .section_info .section_info_inner_item .main_container{
+    /* padding: 10px; */
+    background: var(--bg-dark-color);
+    border-radius: 20px;
+    margin-top: 10px;
+
+}
+#skill .section_info .photoshop .section_info_inner_item .main_container .inner_container{
+    padding: 5px;
+    background-color: var(--photoshop-color);
+    display: block;
+    margin-left: auto;
+    width: 90%;
+    border-radius: 0px 20px 20px 0px;
+}
+#skill .section_info  .section_info_inner_item_img{
+    text-align: center;
+}
+#skill .section_info .section_info_inner_item_img img{
+    padding: 14px;
+    border-radius: 50%;
+    box-shadow: 5px 10px 18px var(--bg-dark-color);
+}
+#skill .section_info .per_skill{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+}
+#skill .section_info .per_skill span{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+#skill .section_info .photoshop{
+    padding: 20px 0;
+}
+#skill .section_info .illustrator{
+    padding: 20px 0;
+}
+#skill .section_info .dw{
+    padding: 20px 0;
+}
+#skill .section_info .a_ef{
+    padding: 20px 0;
+}
+
+#skill .section_info .illustrator .section_info_inner_item .main_container .inner_container{
+    padding: 5px;
+    background-color: var(--illustrator-color);
+    display: block;
+    margin-left: auto;
+    width: 85%;
+    border-radius: 0px 20px 20px 0px;
+}
+#skill .section_info .illustrator .per_skill{
+    width: 85%;
+    display: block;
+    margin-left: auto;
+}
+#skill .section_info .dw .section_info_inner_item .main_container .inner_container{
+    padding: 5px;
+    background-color: var(--dw-color);
+    display: block;
+    margin-left: auto;
+    width: 75%;
+    border-radius: 0px 20px 20px 0px;
+}
+#skill .section_info .dw .per_skill{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+}
+#skill .section_info .a_ef .section_info_inner_item .main_container .inner_container{
+    padding: 5px;
+    background-color: var(--ae-color);
+    display: block;
+    margin-left: auto;
+    width: 80%;
+    border-radius: 0px 20px 20px 0px;
+}
+#skill .section_info .a_ef .per_skill{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+}
+/* skill section end  */
+/* service section start  */
+
+#service .secvice_items{
+    padding: 50px 0;
+    overflow: hidden;
+    justify-content: center;
+}
+#service .secvice_items .service_inner_item{
+    background: var(--bg-light-color);
+    margin-left: 30px;
+    padding: 0px;
+    position: relative;
+}
+#service .secvice_items .service_inner_item .service_item_img img{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background: var(--bg-dark-color);
+    align-items: center;
+    width: 50px;
+}
+#service .secvice_items .service_inner_item .service_item_img.col-lg-4{
+    background: var(--bg-dark-color);
+    padding: 0px;
+}
+#service .secvice_items .service_inner_item .service_item_info h3{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--secandry-paragroh-color);
+    padding: 20px 0 10px;
+}
+#service .secvice_items .service_inner_item .service_item_info p{
+    font-size: 14px;
+    text-transform: inherit;
+    color: var(--secandry-paragroh-color);
+    padding-bottom: 15px;
+}
+#service .secvice_items .service_inner_item .section_overly{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: var(--primary-color);
+}
+#service .secvice_items .service_inner_item .section_overly h4{
+    color: var(--common-white);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 10px 0;
+}
+#service .secvice_items .service_inner_item .section_overly{
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform-origin:  top bottom;
+    transform: scale(.8);
+}
+#service .secvice_items .service_inner_item:hover .section_overly {
+    visibility: visible;
+    opacity: 1;
+    transform-origin: bottom top;
+    transform: scale(1);
+}
+
+/* #service .secvice_items{
+    overflow: hidden;
+    height: 150px;
+} */
+/* service section end  */
+/* protfolio section start  */
+#protfolio{
+    padding: 100px  0;
+}
+#protfolio button{
+    background: none;
+    border: none;
+    width: 100%;
+    margin-top: 50px ;
+}
+#protfolio button a{
+    color: var(--primary-color);
+    padding: 15px 25px;
+    display: inline-block;
+    background: var(--yellow);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#protfolio .protfolio_item{
+    position: relative;
+    transform: scale(1);
+    transition: .5s;
+    width: 350px;
+    height: 420px;
+    margin: 10px;
+    
+}
+#protfolio .protfolio_slider{
+    padding: 30px 0;
+}
+#protfolio .protfolio_item a .protfolio_item_overly  h3{
+    font-size: 25px;
+    text-align: center;
+    padding: 8px 128px;
+    background: var(--bg-dark-color);
+    color: var(--primary-color);
+    text-transform: capitalize;
+    
+}
+#protfolio .protfolio_item:hover{
+    filter: drop-shadow(5px 5px 10px #666);
+    transform: scale(.9);
+    
+}
+#protfolio .protfolio_item .protfolio_item_overly{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+#protfolio .protfolio_item .protfolio_item_img {
+    /* width: 350px;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden; */
+    background-position: center;
+    background-size: cover;
+    height: 420px;
+}
+#protfolio .protfolio_item:hover .protfolio_item_overly{
+    visibility: visible;
+    opacity: 1;
+}
+/* protfolio section end  */
+/* testomonial section start  */
+#testomonial {
+    padding: 50px;
+    background: var(--bg-color);
+}
+#testomonial .section_heading{
+    padding: 20px 0;
+}
+#testomonial .testomonial_items {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--bg-dark-color);
+    margin: 10px;
+}
+#testomonial .testomonial_items .items_img img{
+    width: 200px;
+}
+#testomonial .testomonial_items .items_info{
+    padding: 0 20px;
+}
+#testomonial .testomonial_items .items_info p{
+    font-size: 16px;
+    text-transform: initial;
+    color: var(--primary-color);
+    padding: 10px 0;
+}
+#testomonial .testomonial_items .items_info h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 20px 0 5px;
+    font-weight: 500;
+}
+#testomonial .testomonial_items .items_info h5{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+#testomonial .testomonial_items .testomonial_slidr .testomonial_dots li button{
+    font-size: 0px;
+    width: 30px;
+    height: 30px;
+    background: var(--yellow);
+}
+/* testomonial section end  */
+/* blog section start  */
+#blog{
+    padding: 100px 0;
+}
+#blog .section_heading{
+    padding: 30px 0;
+}
+#blog .bolg_slider .blog_items{
+    background: var(--bg-dark-color);
+    margin: 20px;
+    padding: 20px;
+    transition: .5s;
+}
+#blog .bolg_slider .blog_items:hover{
+    color: var(--common-white);
+    background: var(--primary-color);
+}
+#blog .bolg_slider .blog_items .bloge_img{
+    display: flex;
+    justify-content: center;
+
+}
+#blog .bolg_slider .blog_items .bloge_img img{
+    width: 350px;
+}
+#blog .bolg_slider .blog_items .blog_info p{
+    color: var(--secandry-paragroh-color);
+    font-size: 16px;
+    
+}
+#blog .bolg_slider .blog_items .blog_info .ancor {
+    color: var(--primary-color);
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+
+}
+#blog .bolg_slider .blog_items .blog_info .ancor i{
+    padding-left: 5px;
+}
+#blog .bolg_slider .blog_items:hover .blog_info a h4,
+#blog .bolg_slider .blog_items:hover .blog_info .ancor,
+#blog .bolg_slider .blog_items:hover .blog_info p{
+    color: var(--common-white);
+}
+
+#blog .bolg_slider .blog_items .blog_info a h4{
+    color: var(--primary-color);
+    font-size: 24px;
+    padding: 10px 0;
+}
+#blog button{
+    background: none;
+    border: none;
+    width: 100%;
+    margin-top: 50px ;
+}
+#blog button a{
+    color: var(--primary-color);
+    padding: 15px 25px;
+    display: inline-block;
+    background: var(--yellow);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/* blog section end  */
+/* footer section start  */
+#footer{
+    background: var(--bg-color);
+    padding: 100px 0;
+    box-shadow: 35px -23px 27px var(--bg-dark-color);
+
+}
+#footer .footer{
+}
+#footer .about_bizzency .social_media{
+    padding: 20px 0 10px;
+}
+#footer .about_bizzency .social_media a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    font-size: 25px;
+    margin-right: 10px;
+    transition: .5s;
+    color: var(--primary-color);
+}
+#footer .about_bizzency .social_media i:hover{
+    background: var(--primary-color);
+    color: var(--common-white);
+    border: var(--primary-color);
+}
+#footer .about_bizzency p{
+    color: var(--secandry-paragroh-color);
+    font-size: 16px;
+    text-transform: initial;
+    padding: 20px 0;
+}
+#footer .footer_heading h3{
+    font-size: 20px;
+    color: var(--secandry-paragroh-color);
+    padding: 0px 0 25px;
+    text-transform: capitalize;
+}
+#footer .footer_contact .icon i{
+    color: var(--icon-color);
+    font-size: 24px;
+}
+#footer .footer_contact .icon_info p,
+#footer .footer_contact .icon_info a{
+    color: var(--icon-color);
+    font-size: 14px;
+    padding-left: 10px;
+    transition: .5s;
+    display: inline-block;
+}
+#footer .footer_contact .footer_contact_items .items_contant{
+    padding: 15px 0;
+}
+#footer .footer_navigation .footer_nav ul li a{
+    color: var(--secandry-paragroh-color);
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 0;
+    transition: .5s;
+
+
+}
+#footer .footer_navigation .footer_nav ul li:hover a{
+    padding-left: 15px;
+    color: var(--primary-color);
+}
+#footer .footer_fliker .footer_protfolio .footer_protfolio_img{
+    padding: 20px 0;
+}
+/* footer section end  */

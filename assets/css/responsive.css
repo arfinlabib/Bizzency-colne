@@ -1,0 +1,121 @@
+/* Large divaice  */
+@media (min-width:992px) and (max-width:1199.98px) {
+    #my_nav .menu ul li a {
+        padding: 35px 12px;
+        font-size: 14px;
+    }
+
+    .form-control {
+        font-size: 0.8rem;
+    }
+
+    #banner {
+        height: 560px;
+    }
+
+    #banner .banner .banner_contant h3 {
+        font-size: 40px;
+    }
+
+    #banner .banner .banner_contant h1 {
+        font-size: 70px;
+    }
+
+    #banner .banner .banner_contant h4 {
+        font-size: 25px;
+    }
+
+    #banner .banner .banner_contant button .ancor {
+        font-size: 18px;
+    }
+
+    #service .secvice_items .service_inner_item .service_item_info h3 {
+        font-size: 18px;
+        padding: 12px 0 10px;
+    }
+
+    #service .secvice_items .service_inner_item .service_item_info p {
+        font-size: 12px;
+        padding-bottom: 12px;
+    }
+
+    #protfolio .protfolio_item a .protfolio_item_overly h3 {
+        padding: 17px 136px;
+    }
+
+    #testomonial .testomonial_items .items_img img {
+        width: 150px;
+    }
+
+    #testomonial .testomonial_items .items_info p {
+        font-size: 10px;
+        padding: 10px 0;
+    }
+
+    #testomonial .testomonial_items .items_info h4 {
+        font-size: 15px;
+        padding: 5px 0 5px;
+    }
+
+    #testomonial .testomonial_items .items_info h5 {
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-top: 0px;
+    }
+
+    #blog .bolg_slider .blog_items {
+        padding: 40px;
+    }
+
+    #footer .about_bizzency p {
+        color: var(--secandry-paragroh-color);
+        font-size: 14px;
+        text-transform: initial;
+        padding: 15px 0;
+    }
+
+    #footer .about_bizzency .social_media a i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    #footer .footer .footer_contact_items .icon {
+        justify-content: center;
+    }
+
+    #footer .footer .footer_contact_items .icon_info {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #footer .footer .footer_contact_items .footer_contact {
+        margin: auto;
+    }
+
+    #footer .footer_contact .icon i {
+        font-size: 20px;
+        margin: auto;
+    }
+
+    #footer .footer_contact .icon_info p,
+    #footer .footer_contact .icon_info a {
+        font-size: 12px;
+        padding-left: 0px;
+    }
+
+    #footer .footer_contact .icon_info {
+        justify-content: end;
+    }
+
+
+}
+
+/* Large divaice end */
+@media (min-width:768px) and (max-width:991.98px) {}
+
+@media (min-width:576px) and (max-width:767.98px) {}
+
+@media (min-width:0px) and (max-width:575.98px) {}
